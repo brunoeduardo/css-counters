@@ -1,0 +1,31 @@
+.counter {
+    counter-reset: section;
+    list-style: none;
+}
+
+.counter li:before {
+    counter-increment: section;
+    content: counter(section)": ";
+}
+
+.link-counter {
+    counter-reset: link;
+}
+
+.link-counter a[href] {
+  counter-increment: link;
+}
+
+.link-counter a[href]:empty::after {
+  content: "[" counter(link) "]";
+}
+
+.nest-container ol {
+    counter-reset: nested;
+    list-style-type: none;
+}
+
+.nest-container li::before {
+    counter-increment: nested;
+    content: counters(nested, ". ") " ";
+}
