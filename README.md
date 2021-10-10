@@ -1,4 +1,4 @@
-#CSS Counters
+# CSS Counters
 
 Study to understand how CSS counters work and some use cases where I can use them.
 
